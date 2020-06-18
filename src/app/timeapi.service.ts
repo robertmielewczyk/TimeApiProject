@@ -14,8 +14,4 @@ export class TimeapiService {
   getCurrentTime(timezone: string){
     return this.http.get(`http://worldtimeapi.org/api/timezone/${timezone}`);
   }
-
-  getTest(){
-    return this.http.get(`http://worldtimeapi.org/api/timezone/Europe`);
-  }
 }
